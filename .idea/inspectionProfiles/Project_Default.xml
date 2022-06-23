@@ -1,0 +1,12 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <searchConfiguration name="dump" description="We should block dump from commit" problemDescriptor="Don't allow dump" text="$func$($args$)" recursive="true" caseInsensitive="false" type="PHP">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="func" regexp="dd|dump" within="" contains="" />
+        <constraint name="args" within="" contains="" />
+      </searchConfiguration>
+    </inspection_tool>
+  </profile>
+</component>

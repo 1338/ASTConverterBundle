@@ -1,3 +1,7 @@
+###> phpunit
+.phpunit.result.cache
+###< phpunit
+
 
 ###> symfony/framework-bundle ###
 /.env.local
