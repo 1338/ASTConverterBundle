@@ -1,0 +1,28 @@
+{
+    "name": "mvds/ast-converter-bundle",
+    "type": "symfony-plugin",
+    "autoload": {
+        "psr-4": {
+            "MVDS\\AstConverterBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MVDS\\\\AstConverterBundle\\\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Max van der Sluis",
+            "email": "maxvandersluis@yahoo.com"
+        }
+    ],
+    "require": {
+        "nikic/php-parser": "^4.14"
+    },
+    "license": "Beerware",
+    "require-dev": {
+        "symfony/phpunit-bridge": "^6.1",
+        "symfony/maker-bundle": "^1.43"
+    }
+}
