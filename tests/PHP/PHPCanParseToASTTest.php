@@ -1,6 +1,6 @@
 <?php
 
-namespace MVDS\ASTConverterBundle\Tests;
+namespace MVDS\AstConverterBundle\Tests\PHP;
 
 use PhpParser\Node\Stmt\Namespace_;
 use PhpParser\Node\Stmt\Use_;
