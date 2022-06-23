@@ -23,7 +23,6 @@
     "license": "Beerware",
     "require-dev": {
         "symfony/phpunit-bridge": "^6.1",
-        "symfony/maker-bundle": "^1.43",
-        "phpunit/phpunit": "^9.5"
+        "symfony/maker-bundle": "^1.43"
     }
 }

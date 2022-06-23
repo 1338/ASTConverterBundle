@@ -30,12 +30,19 @@ class PHPCanParseToASTTest extends TestCase
         $this->parsed = $this->parser->parse($this->phpTemplate);
     }
 
-
+    /**
+     * @covers \PhpParser\ParserFactory::create
+     * @return void
+     */
     public function testCanParse(): void
     {
         $this->assertArrayHasKey(0, $this->parsed, 'Parsed PHP should have 0 index');
     }
 
+    /**
+     * @covers \PhpParser\Node\Stmt\Namespace_::class
+     * @return void
+     */
     public function testCanGetParsedClassNamespace(): void
     {
         $namespace = $this->parsed[0];
@@ -48,6 +55,10 @@ class PHPCanParseToASTTest extends TestCase
         );
     }
 
+    /**
+     * @covers
+     * @return void
+     */
     public function testCanGetClassNamespaceAST(): void
     {
         /** @var Namespace_ $namespace */
@@ -64,6 +75,10 @@ class PHPCanParseToASTTest extends TestCase
         );
     }
 
+    /**
+     * @covers Use_::class
+     * @return void
+     */
     public function testCanGetClassUseStatements(): void
     {
         /** @var Namespace_ $namespace */
@@ -100,6 +115,10 @@ class PHPCanParseToASTTest extends TestCase
         $this->assertSame('ORM', $useUse->alias->name, 'We should be able to extract use alias');
     }
 
+    /**
+     * @covers Class_::class
+     * @return void
+     */
     public function testCanGetClass(): void
     {
         /** @var Namespace_ $namespace */
@@ -119,6 +138,10 @@ class PHPCanParseToASTTest extends TestCase
         $this->assertSame('User', $class->name->name, "Should be able to extract class name");
     }
 
+    /**
+     * @covers \PhpParser\Node\Stmt\Class_::getAttributes
+     * @return void
+     */
     public function testCanGetClassPropertyORM(): void
     {
         /** @var Class_ $class */
