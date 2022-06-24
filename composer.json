@@ -22,9 +22,15 @@
         "symfony/security-csrf": "^6.1",
         "symfony/phpunit-bridge": "^6.1",
         "symfony/maker-bundle": "^1.43",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "symfony/runtime": "^6.1"
     },
     "require": {
         "nikic/php-parser": "^4.14"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
     }
 }
